@@ -1,0 +1,63 @@
+<%-include ('header')  %>
+
+
+
+
+
+<div class="container">
+    <header class ="jumbotron">
+    <div class="container">
+    <h1> These are our GoldenPaws</h1>
+    <p>View our our hand-picked breeds from all over the world</p>
+    <p>
+        <a class="btn btn-primary btn-lg " href="/dogs/new_dog">Add new Dog</a> 
+    </p>
+    <p>
+        <form action="/dogs" method="GET" class="form-inline">
+            <div class="form-group">
+                <input type="text" name="search" placeholder="Breed or Location" class="form-control">
+                <input type="submit" value="Search" class="btn btn-primary ">
+            </div>
+        </form>
+    </p>
+    </div>
+</header>
+
+
+    <div class="row">
+      <% dogs.forEach(function(dog) { %>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card indexCards shadow border-0 mt-4">
+            <a href="/dogs/<%= dog._id %>"><img id="dogCard" class="card-img-top" src="<%= dog.image %>"></a>
+            <div class="card-body">
+              <h5 class="card-title text-capitalize">
+                <a href="/dogs/<%= dog._id %>"><%= dog.breed %></a>
+                
+         
+             
+              </h5>
+              <h6 class="card-subtitle">
+                <% if(dog.comments.length === 0) { %>
+                  <span class="text-muted">No Reviews</span>
+                <% } else { %>
+                  <% var stars = ['<i class="far fa-star text-danger "></i>', '<i class="far fa-star text-danger "></i>', '<i class="far fa-star text-danger "></i>', '<i class="far fa-star text-danger "></i>', '<i class="far fa-star text-danger "></i>'] %>
+                  <% for(var i = 0; i < Math.round(dog.rateAvg); i++) { %>
+                      <% stars[i] = '<i class="fas fa-star text-danger "></i>' %>
+                  <% } %>
+                  <% for(var i = 0; i < stars.length; i++) { %>
+                    <%- stars[i] %>
+                  <% } %>
+                  <% if (dog.comments.length === 1) { %>
+                    <span class="text-muted"><%= dog.comments.length %> Review</span>
+                  <% } else { %>
+                    <span class="text-muted"><%= dog.comments.length %> Reviews</span>
+                  <% } %>
+                <% } %>
+              </h6>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+    </div>
+  </div>
+<%-include ('footer')  %>

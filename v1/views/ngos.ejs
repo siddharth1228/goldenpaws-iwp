@@ -1,0 +1,30 @@
+<%-include ('header')  %>
+
+
+
+
+
+<div class="container">
+    
+
+
+    <div class="row">
+      <% ngos.forEach(function(ngo) { %>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card indexCards shadow border-0 mt-4">
+            <a href="/ngo/<%= ngo._id %>"><img id="ngoCard" class="card-img-top" src="<%= ngo.image %>"></a>
+            <div class="card-body">
+              <h5 class="card-title text-capitalize">
+                <a href="/ngo/<%= ngo._id %>"><%= ngo.name %></a>
+                
+         
+             
+              </h5>
+              
+            </div>
+          </div>
+        </div>
+        <% }) %>
+    </div>
+  </div>
+<%-include ('footer')  %>
