@@ -70,8 +70,7 @@ else{
         $mail->Body    = 'GoldenPaws is an online application that can be used to purchase or sell dogs. The system
         accepts any valid user to register and allows him/her to sell or purchase a dog. Furthermore, they
         can even rate or comment on the breed of other dogs. This aids in the decision-making process of
-        non frequent customers.
-        Github link:-https://github.com/siddharth1228/goldenpaws-iwp'; 
+        non frequent customers.Github link:-https://github.com/siddharth1228/goldenpaws-iwp'; 
         $mail->AltBody = 'Body in plain text for non-HTML mail '; 
         $mail->send();
     
