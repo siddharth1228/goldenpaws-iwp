@@ -68,9 +68,9 @@
               <% if(dog.comments.length === 0) { %>
                 <small class="text-muted">No Reviews</small>
               <% } else { %>
-                <% var stars = ['<small><i class="far fa-star text-danger"></i></small>', '<small><i class="far fa-star text-danger"></i></small>', '<small><i class="far fa-star text-danger"></i></small>', '<small><i class="far fa-star text-danger"></i></small>', '<small><i class="far fa-star text-danger"></i></small>'] %>
+                <% var stars = ['<small><i class="far fa-star text-success"></i></small>', '<small><i class="far fa-star text-success"></i></small>', '<small><i class="far fa-star text-success"></i></small>', '<small><i class="far fa-star text-success"></i></small>', '<small><i class="far fa-star text-success"></i></small>'] %>
                 <% for(var i = 0; i < Math.round(dog.rateAvg); i++) { %>
-                    <% stars[i] = '<small><i class="fas fa-star text-danger"></i></small>' %>
+                    <% stars[i] = '<small><i class="fas fa-star text-success"></i></small>' %>
                 <% } %>
                 <% for(var i = 0; i < stars.length; i++) { %>
                   <%- stars[i] %>
@@ -116,6 +116,7 @@
             </a>
               <% } %>
           </div>
+          <iframe width="932" height="524" src="https://www.youtube.com/embed/zYruEIIdIV4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="card shadow-sm mt-4" id="comments">
           <ul class="list-group list-group-flush">
@@ -132,7 +133,7 @@
               </li>
               <% } else { %>
                 <li id="commentItem" class="list-group-item list-group-item-light">
-                  <button class="btn btn-danger float-right" data-toggle="collapse" data-target="#collapseComment" aria-expanded="false" aria-controls="collapseComment">Leave a Review</button>
+                  <button class="btn btn-success float-right" data-toggle="collapse" data-target="#collapseComment" aria-expanded="false" aria-controls="collapseComment">Leave a Review</button>
                 </li>
                 <% } %>
                   <div class="collapse" id="collapseComment">
@@ -170,7 +171,7 @@
                             Please provide a rating.
                           </div>
                         </div>
-                        <button type="submit" class="btn btn-danger btn-sm">Submit</button>
+                        <button type="submit" class="btn btn-success btn-sm">Submit</button>
                         <button type="reset" class="btn btn-secondary btn-sm float right">Reset</button>
                       </form>
                     </div>
@@ -183,9 +184,9 @@
                           <%= comment.author.username %>
                         </a>
                         <span class="float-right text-muted">
-                  <% var stars2 = ['<small><i class="far fa-star text-danger"></i></small>', '<small><i class="far fa-star text-danger"></i></small>', '<small><i class="far fa-star text-danger"></i></small>', '<small><i class="far fa-star text-danger"></i></small>', '<small><i class="far fa-star text-danger"></i></small>'] %>
+                  <% var stars2 = ['<small><i class="far fa-star text-success"></i></small>', '<small><i class="far fa-star text-success"></i></small>', '<small><i class="far fa-star text-success"></i></small>', '<small><i class="far fa-star text-success"></i></small>', '<small><i class="far fa-star text-success"></i></small>'] %>
                   <% for(var i = 0; i < comment.rating; i++) { %>
-                      <% stars2[i] = '<small><i class="fas fa-star text-danger"></i></small>' %>
+                      <% stars2[i] = '<small><i class="fas fa-star text-success"></i></small>' %>
                   <% } %>
                   <% for(var i = 0; i < stars2.length; i++) { %>
                     <%- stars2[i] %>
@@ -254,3 +255,4 @@
 
 
 <%-include ('footer')  %>
+

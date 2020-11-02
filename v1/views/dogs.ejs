@@ -4,9 +4,9 @@
 
 
 
-<div class="container">
+<div class="container" style="padding-top:20px;">
     <header class ="jumbotron">
-    <div class="container">
+    <div class="container" >
     <h1> These are our GoldenPaws</h1>
     <p>View our our hand-picked breeds from all over the world</p>
     <p>
@@ -40,9 +40,9 @@
                 <% if(dog.comments.length === 0) { %>
                   <span class="text-muted">No Reviews</span>
                 <% } else { %>
-                  <% var stars = ['<i class="far fa-star text-danger "></i>', '<i class="far fa-star text-danger "></i>', '<i class="far fa-star text-danger "></i>', '<i class="far fa-star text-danger "></i>', '<i class="far fa-star text-danger "></i>'] %>
+                  <% var stars = ['<i class="far fa-star text-success "></i>', '<i class="far fa-star text-success "></i>', '<i class="far fa-star text-success "></i>', '<i class="far fa-star text-success "></i>', '<i class="far fa-star text-success "></i>'] %>
                   <% for(var i = 0; i < Math.round(dog.rateAvg); i++) { %>
-                      <% stars[i] = '<i class="fas fa-star text-danger "></i>' %>
+                      <% stars[i] = '<i class="fas fa-star text-success "></i>' %>
                   <% } %>
                   <% for(var i = 0; i < stars.length; i++) { %>
                     <%- stars[i] %>

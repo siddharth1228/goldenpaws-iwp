@@ -81,8 +81,8 @@ router.post("/ngo", middleware.isLoggedIn, function(req, res){
           .exec(function(err, foundDog) {
             if (err || !foundDog) {
               console.log(err);
-              req.flash("error", "Sorry, that dog does not exist!");
-              return res.render("error");
+              req.flash("error", "Sorry, that ngo does not exist!");
+              return res.render("dogs");
             }
             
       
