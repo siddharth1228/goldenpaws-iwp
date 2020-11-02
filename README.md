@@ -10,7 +10,7 @@ Link:-https://nodejs.org/en/download/
 2. Install mongodb on your system
 Link:-https://www.mongodb.com/try/download/community
 3. Download the code and open the code through visual studio
-4. In the console run the command "npmp install --save" to install all the npm files from the package-lock.json file
+4. In the console run the command "npm install --save" to install all the npm files from the package-lock.json file
 5. Run the command "node app.js"
 6. goto 127.0.0.1:8000
 7. There you go
