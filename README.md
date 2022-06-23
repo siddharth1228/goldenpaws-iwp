@@ -27,5 +27,7 @@ HERE ARE SOME SCREENSHOTS OF THE PROJECT
 3. NGO Section
 ![image](https://user-images.githubusercontent.com/66314218/175311156-40087ac9-e2dd-4b3c-9005-85cb5be4a141.png)
 
+4. Comment Section
+![image](https://user-images.githubusercontent.com/66314218/175311829-cac71bb5-5be8-4d92-b95e-632e56bd4f22.png)
 
 Project Report:- [Review 3 report.pdf](https://github.com/siddharth1228/goldenpaws-iwp/files/8967686/Review.3.report.pdf)
