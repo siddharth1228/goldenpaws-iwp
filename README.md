@@ -14,3 +14,18 @@ Link:-https://www.mongodb.com/try/download/community
 5. Run the command "node app.js"
 6. goto 127.0.0.1:8000
 7. There you go
+
+
+
+HERE ARE SOME SCREENSHOTS OF THE PROJECT
+1. Show page
+![image](https://user-images.githubusercontent.com/66314218/175310850-7773e706-1c55-490f-8f1b-ab3988ceab52.png)
+
+2. Form Page
+![image](https://user-images.githubusercontent.com/66314218/175311002-eb2365cc-e182-4863-9715-0c956414a039.png)
+
+3. NGO Section
+![image](https://user-images.githubusercontent.com/66314218/175311156-40087ac9-e2dd-4b3c-9005-85cb5be4a141.png)
+
+
+Project Report:- [Review 3 report.pdf](https://github.com/siddharth1228/goldenpaws-iwp/files/8967686/Review.3.report.pdf)
